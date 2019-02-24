@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactive Website</title>
+  </head>
+  <style>
+    body{
+      background-color: black;
+      margin: 0;
+    }
+     p{
+      display: none;
+      color: white;
+      margin: 10px;
+     }
+
+  </style>
+  <script>
+      function reveal() {
+        document.getElementById("hidden").style.display = 'block';
+      }
+  </script>
+    <body>
+        <button onclick="reveal()">click!</button>
+        <p id="hidden">HI</p>
+    </body>
+  </html>
