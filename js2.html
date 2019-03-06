@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>JS Exercise 2</title>
-	
-</head>
 <style>
-	
+	body{
+		margin: 50px;
+	}
+	h1{
+		color: blue;
+		font-family: "American Typewriter";
+		font-size: 50pt;
+	}
+	li{
+		list-style-type: none;
+		font-size: 40pt;
+		font-family: "American Typewriter";
+		color: cyan;
+	}
 </style>
+<body>
+<head>
+	<title>JS 2</title>
+</head>
+<h1>JS 2!</h1>
+<ul id="myList">
+  <li>1</li>
+  <li>2</li>
+</ul>
+
+<button onclick="myFunction()">Click to add!</button>
 
 <script>
-	
+function myFunction() {
+  var node = document.createElement("LI");
+  var textnode = document.createTextNode("3");
+  node.appendChild(textnode);
+  document.getElementById("myList").appendChild(node);
+}
 </script>
-
-<body>
-
-
 
 </body>
 </html>
