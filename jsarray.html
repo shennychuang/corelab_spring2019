@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
+<style>
+	body{
+		margin: 20px;
+		background-color: black;
+		font-size: 20pt;
+		color: lightblue;
+	}
+</style>
 <body>
 
-<h2>JS Loops</h2>
+<h2>JS for Loops</h2>
 
 <p id="demo"></p>
 
@@ -16,19 +24,19 @@ for (i = 0; i < colors.length; i++) {
 document.getElementById("demo").innerHTML = text;
 </script>
 
-<h2>JS While Loop</h2>
-
-<p id="demo"></p>
+<p id="dem"></p>
 
 <script>
+var fruits = ["Apple", "Blueberry", "Banana", "Pear", "Peach", "Cherry"];
 var text = "";
-var i = 0;
-while (i < 10) {
-  text += "<br>" + i;
-  i++;
+var i;
+for (i = 0; i < fruits.length; i++) {
+  text += fruits[i] + "<br>";
 }
-document.getElementById("demo").innerHTML = text;
+document.getElementById("dem").innerHTML = text;
 </script>
+
+
 
 </body>
 </html>
