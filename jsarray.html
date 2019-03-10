@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JS Loops</h2>
+
+<p id="demo"></p>
+
+<script>
+var colors = ["Purple", "Blue", "Red", "Pink", "Orange", "Green"];
+var text = "";
+var i;
+for (i = 0; i < colors.length; i++) {
+  text += colors[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<h2>JS While Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+var text = "";
+var i = 0;
+while (i < 10) {
+  text += "<br>" + i;
+  i++;
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
