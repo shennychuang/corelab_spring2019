@@ -2,8 +2,8 @@
 <html>
 <style>
 	body{
-		margin: 50px;
-		background-color: lightpink;
+		margin: 10%;
+		background-color: lightblue;
 	}
 	h1{
 		color: blue;
@@ -14,8 +14,20 @@
 		list-style-type: none;
 		font-size: 40pt;
 		font-family: "American Typewriter";
-		color: cyan;
+		color: white;
 	}
+	button{
+      outline-style: none;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      background-color: black;
+      font-size: 30pt;
+      font-family: "Futura";
+      text-align: center;
+      color: grey;
+      opacity: 0.7;
+     }
 </style>
 <body>
 <head>
@@ -23,16 +35,15 @@
 </head>
 
 <ul id="myList">
-  <li>1</li>
-  <li>2</li>
+ 
 </ul>
 
-<button onclick="myFunction()">Click to add!</button>
+<button onclick="myFunction()">Click</button>
 
 <script>
 function myFunction() {
   var node = document.createElement("LI");
-  var textnode = document.createTextNode("3");
+  var textnode = document.createTextNode("hello");
   node.appendChild(textnode);
   document.getElementById("myList").appendChild(node);
 }
