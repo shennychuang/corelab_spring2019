@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<style>
+	body{
+		margin:5%;
+		background-color: white;
+		font-size: 24pt;
+		font-family: serif;
+	}
+
+	button{
+		height: 300px;
+		width: 300px;
+		background-image: url(hua.jpg);
+		background-size: 100%;
+		border-radius: 50%;
+	}
+</style>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+<title>Moment of Spring</title>
+
+<h2>The Spring</h2>
+
+<h5>Now that the winter's gone, the earth hath lost <br>
+Her snow-white robes, and now no more the frost <br>
+Candies the grass, or casts an icy cream <br>
+Upon the silver lake or crystal stream; <br>
+But the warm sun thaws the benumbed earth, <br>
+And makes it tender; gives a sacred birth <br>
+To the dead swallow; wakes in hollow tree <br>
+The drowsy cuckoo, and the humble-bee. <br>
+Now do a choir of chirping minstrels bring <br>
+In triumph to the world the youthful Spring. <br>
+The valleys, hills, and woods in rich array <br>
+Welcome the coming of the long'd-for May. <br>
+Now all things smile, only my love doth lour; <br>
+Nor hath the scalding noonday sun the power <br>
+To melt that marble ice, which still doth hold <br>
+Her heart congeal'd, and makes her pity cold. <br>
+The ox, which lately did for shelter fly <br>
+Into the stall, doth now securely lie <br>
+In open fields; and love no more is made <br>
+By the fireside, but in the cooler shade <br>
+Amyntas now doth with his Chloris sleep <br>
+Under a sycamore, and all things keep <br>
+Time with the season; only she doth carry <br>
+June in her eyes, in her heart January.</h5>
+
+<button></button>
+
+
+
+<p id="demo"></p>
+
+<script>
+$(document).ready(function() {
+  var myElements = $("p");
+  $("#demo").text("Written by: Thomas Carew" + myElements[0].innerHTML);
+});
+
+
+$(document).ready(function() {
+  var myElement = $("#demo");
+  myElement.css("color","purple");
+  myElement.css("background-color","lightyellow");
+});
+
+$(document).ready(function() {
+  var myElement = $("h2");
+  myElement.css("color","orange");
+  myElement.css("background-color","lightyellow");
+});
+
+$(document).ready(function() {
+  var myElement = $("h5");
+  myElement.css("color","white");
+  myElement.css("background-color","lightpink");
+});
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h5").hide();
+  });
+});
+</script>
+
+</body>
+</html>
