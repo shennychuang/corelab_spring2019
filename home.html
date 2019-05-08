@@ -6,45 +6,42 @@ h1{
   margin: 20px;
 }
 body{
-    background-image: url(labb.jpg);
-    background-size: 20%;
-    background-repeat: repeat;
+    margin: 50px;
+    background-color: rebeccapurple;
     color: white;
-    font-size: 14pt;
-    font-family: "Helvetica";
+    font-size: 10pt;
+    text-align: center;
+    font-family: "Futura";
 }
 ul {
-    margin: 10px;
+    margin: 50px;
+
     padding: 0;
 }
 
 ul li {
     float: left;
     color: #000;
-    width: 200px;
-    height: 60px;
-    border-radius: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
     line-height: 60px;
     text-align: center;
     background-color: black;
     opacity: .7;
     margin-bottom: 3px;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
     list-style-type: none;
 }
 
 ul li a {
     text-decoration: none;
     color: #ADD8E6;
-    width: 200px;
-    height: 60px;
+    margin-top: 40px;
+    width: 150px;
+    height: 150px;
     display: block;
-}
-
-ul li a:hover {
-    background-color: white;
-    border-radius: 30px;    
 }
 
 ul li ul li{
@@ -53,13 +50,48 @@ ul li ul li{
     
 ul li:hover ul li{
     display: block;
+
 }
+.text{
+      font-size: 200%;
+      font-family: "Futura";
+      color: rebeccapurple;
+      text-align: center;
+      animation: animate 1.5s infinite linear;
+      }
+      @keyframes animate
+      {
+          0% {
+              color: rebeccapurple;
+              text-shadow: none;
+          }
+          18% {
+              color: rebeccapurple;
+              text-shadow: none;
+          }
+          20% {
+              color: white;
+              text-shadow: 0 0 7px rgb(255, 99, 71) , 0 0 20px orange;
+          }
+          30% {
+              color: rebeccapurple;
+              text-shadow: none;
+          }
+          35% {
+              color: rebeccapurple;
+              text-shadow: none;
+          }
+          40% {
+              color: white;
+              text-shadow: 0 0 7px rgb(255, 99, 71) , 0 0 20px orange;
+          }
+        }
 
 </style>
 <title>Home</title>
 </head>
 <body>
-<h1>Core Studio Interaction</h1>
+<div class="text"><h1>Core Studio Interaction</h1></div>
 
 <ul>
   <li><a href="https://shennychuang.github.io/corestudio_spring2019/dialogue1.html">Dialogue 1</a>
@@ -76,11 +108,11 @@ ul li:hover ul li{
   </li>
   <li><a href="https://shennychuang.github.io/corestudio_spring2019/game.html">Game</a>
      
-  </li>
-  <br><br><br><br>
+  </li></ul><br><br>
+  
   
 
-<h1><br><br>Core Lab Interaction</h1>
+<div class="text"><h1><br><br><br>Core Lab Interaction</h1></div>
 
 <ul>
   <li><a href="assignment1.html">Assignment 1</a>
@@ -106,10 +138,10 @@ ul li:hover ul li{
 
   <li><a href="spring.html">jQuery</a>
    
-  </li><br><br><br><br><br><br><br>
+  </li><br><br><br>
 
 
-  <h1><br><br><br>People</h1>
+  <div class="text"><h1><br><br><br><br><br>People</h1></div>
 
   <li><a href="https://maecraford.github.io">Mae Craford</a>
   </li>
